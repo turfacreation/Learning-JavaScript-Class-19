@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS|class-19</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<style>
+			.container1 {
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+				width: 48%;
+				float: left;
+			}
+			.container2 {
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+				width: 48%;
+				float: left;
+				margin-left: 20px;
+			}
+			.container3 {
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+				width: 100%;
+				float: left;
+			}
+			.container4 {
+				background-color: #f1f1f1;
+				padding: 20px;
+				margin-top: 20px;
+				width: 48%;
+				float: left;
+				margin-left: 20px;
+			}
+			.headingdiv {
+				margin-top: 40px;
+				width: 100%;
+			}
+			.headingdiv2 {
+				margin-top: 40px;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1 class="text-center bg-primary text-white p-4 display-4 fw-bold ">Assignment -19 | ~Learning JavaScript~</h1>
+		</div>
+		<div class="container">
+			
+			<br><br>
+			<h1 id="inventor">
+				Do You Want to Know Who Invented JavaScript and When?
+			</h1>
+
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('inventor').innerHTML = '<h2> 1995 Dec 04 JavaScript Strat Her Journy Invented By Brendan Eich</h2>'">
+				Click For Answer
+			</button>
+
+			<h1 id="jstype">
+				Are Your Want to Know which type of language JavaScript is?
+			</h1>
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('jstype').innerHTML ='JavaScript is a client-side scripting language, making web pages more dynamic and interactive.'">
+				Click For Answer
+			</button>
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('jstype').style.color ='tomato'">
+				Change Color Tomato
+			</button>
+			<h1 id="jsfeatures">Do You Want to Know About JavaScript Features</h1>
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('jsfeatures').innerHTML = '<ul><li>Light Weight Scripting language</li><li>Dynamic Typing</li><li>Object-oriented programming support</li><li>Functional Style</li><li>Platform Independent</li><li>Prototype-based</li><li>Interpreted Language</li><li>Single-threaded</li><li>Async Processing</li><li>Web Workers</li><li>Client-Side Validation</li><li>More control in the browser</li><li>Backend development</li></ul>'">
+				Click For Answer
+			</button>
+
+			<h1 id="prntfunction">
+				Do You Want to Know About JavaScript Printing Function
+			</h1>
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('prntfunction').innerHTML = '<ol><li>document.write()</li><li>window.alert()</li><li>console.log()</li><li>document.getElementById()</li></ol>'">
+				Click For Answer
+			</button>
+			<!-- javascript operators -->
+
+			<h2 class="text-center">JavaScript Operators</h2>
+			<script>
+				document.write("<div class='container1'>");
+				const x = 10;
+				const y = 5;
+				const z = x + y;
+				document.write("If x = 10");
+				document.write("<br>");
+				document.write(" And y = 5");
+				document.write("<br>");
+				document.write("what is the Addition of  x + y");
+				document.write("<br>");
+				document.write("Results =");
+				document.write(z);
+				document.write("<br>");
+				console.log(z);
+				document.write("</div>");
+				// subtraction
+				// document.write("<hr>");
+				document.write("<div class='container2'>");
+				const a = 10;
+				const b = 5;
+				const c = x - y;
+				document.write("If a = 10");
+				document.write("<br>");
+				document.write(" And b = 5");
+				document.write("<br>");
+				document.write("what is the subtraction of  a - b");
+				document.write("<br>");
+				document.write("Results = ");
+				document.write(c);
+				document.write("<br>");
+				console.log(c);
+				document.write("</div>");
+			</script>
+
+			<!-- javascript Data Type-->
+		</div>
+
+		<div class="container">
+			<h2 class="text-center">JavaScript Data Types</h2>
+			<script>
+				document.write("<div class='container3'>");
+				let p = 10;
+				let q = "Hello World!";
+				let s = true;
+				document.write("10 is a type of ");
+				document.write(typeof p);
+				document.write(" where no need any of Qutetion ");
+				document.write("<br>");
+				document.write('"Hello World!" is a type of ');
+				document.write(typeof q);
+				document.write(" where need Qutetion ");
+				document.write("<br>");
+				document.write(" True/ False is a type of ");
+				document.write(typeof s);
+				document.write("<br>");
+			</script>
+		</div>
+		<div class="container">
+			<h2 class="text-center mt-5">Content color Change</h2>
+			<h1 id="slogan" class="text-center bg-primary">
+				Freedom IT Institutions Slogan
+			</h1>
+
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('slogan').innerHTML = 'Strive for Self Development'">
+				Click for Change Slogan
+			</button>
+			<button
+				id="btn"
+				class="btn btn-outline-primary"
+				onclick="document.getElementById('slogan').style.color = 'White'">
+				Change Color White
+			</button>
+			<button
+				id="btn"
+				class="btn btn-warning"
+				onclick="document.getElementById('slogan').style.color = 'tomato'">
+				Change Color Tomato
+			</button>
+		</div>
+		<div class="container">
+			<h2 class="text-center mt-5">Image Project</h2>
+			<img
+				id="climateChange"
+				src="https://images.unsplash.com/photo-1593349783603-654a7069d88d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				alt="image"
+				class="img-fluid rounded mx-auto d-block" />
+			<br />
+			<br />
+			<br />
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('climateChange').src = 'https://images.unsplash.com/photo-1562089727-90aa996a6f18?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'">
+				Winter
+			</button>
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('climateChange').src = 'https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'">
+				Spring
+			</button>
+			<button
+				id="btn"
+				class="btn btn-primary"
+				onclick="document.getElementById('climateChange').src = 'https://images.unsplash.com/photo-1558409057-bbe679023136?q=80&w=1337&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'">
+				Raining
+			</button>
+			<br />
+			<br />
+			<br />
+		</div>
+		<div class="container">
+			<h2 class="text-center mt-5">Battery Charging Project</h2>
+			<img
+				id="battery"
+				src="./img/1.jpg"
+				alt="image"
+				class="img-fluid rounded mx-auto d-block" />
+				<br>
+				<br>
+			<button
+				id="btn"
+				class="btn btn-danger"
+				onclick="document.getElementById('battery').src = './img/2.jpg'">
+				Connect Charger
+			</button>
+			<button
+				id="btn"
+				class="btn btn-warning"
+				onclick="document.getElementById('battery').src = './img/3.jpg'">
+				Charge 40%
+			</button>
+			<button
+				id="btn"
+				class="btn btn-info"
+				onclick="document.getElementById('battery').src = './img/4.jpg'">
+				Charge 75%
+			</button>
+			<button
+				id="btn"
+				class="btn btn-success"
+				onclick="document.getElementById('battery').src = './img/5.jpg'">
+				Charge Full
+			</button>
+			<br>
+			<br>
+			<br>
+		</div>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
